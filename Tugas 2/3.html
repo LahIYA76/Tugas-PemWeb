@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>form</title>
+</head>
+
+<body>
+  <h2>Form Registrasi</h2>
+  <form action="" method="post"></form>
+  <fieldset style="width: 50%;">
+    <legend>Biodata</legend>
+    <table>
+        <tr>
+            <td>Nama Mahasiswa</td>
+            <td>: <input type="text" name="text_form" size="20" placeholder="Nama Mahasiswa"/></td>
+        </tr>
+        <tr>
+            <td>No Induk Mahasiswa (NIM)</td>
+            <td>: <input type="text" name="disabled_form" value="123456789" size="20" disabled/></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top;">Alamat Mahasiswa</td>
+            <td><span style="display: inline-block; vertical-align: top;">:</span>
+            <textarea name="textarea_form" cols="30" rows="5" placeholder="Alamat Anda"></textarea></td>
+        </tr>        
+        <tr>
+            <td>Tanggal Lahir</td>
+            <td>: <select name="Tanggal">
+                <option value="1" selected>01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+            </select>
+            <select name="Bulan">
+                <option value="1"selected>Januari</option>
+                <option value="2">Februari</option>
+                <option value="3">Maret</option>
+                <option value="4">April</option>
+                <option value="5">Mei</option>
+            </select>
+            <select name="Tahun">
+                <option value="1"selected>1990</option>
+                <option value="2">1991</option>
+                <option value="3">1992</option>
+                <option value="4">1993</option>
+                <option value="5">1994</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>: <input type="radio" name="radio" value="P" id="radio1" checked/><label for="radio1">Pria</label>
+            <input type="radio" name="radio" value="W" id="radio2"/><label for="radio2">Wanita</label></td>
+        </tr>
+        <tr>
+            <td>Upload Foto</td>
+            <td>: <input type="file" name="file"/></td>
+        </tr>
+        <tr>
+            <td>URL Websiter</td>
+            <td>: <input type="text" name="text_form" size="40" placeholder="URL Website Anda"/></td>
+        </tr>
+        <tr>
+            <td>Perguruan Tinggi</td>
+            <td>: <input type="text" name="text_form" size="20"/></td>
+        </tr>
+    </table>
+  </fieldset>
+  <br>
+  <fieldset style="width: 50%;">
+    <legend>Info Akun</legend>
+    <table>
+        <tr>
+            <td>Email</td>
+            <td>: <input type="email" name="email_form" size="20" placeholder="Email Anda"/></td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td>: <input type="text" name="text_form" size="20" placeholder="Username Anda"/></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>: <input type="password" name="password_form" size="20" placeholder="Password Anda"/></td>
+        </tr>
+        <tr>
+            <td>Ulangi Password</td>
+            <td>: <input type="password" name="password_form" size="20" placeholder="Password Anda"/></td>
+        </tr>
+    </table>
+  </fieldset>
+  <br>
+  <fieldset style="width: 50%;">
+    <legend>Kemampuan Dasar</legend>
+    <input type="checkbox"/><label>HTML</label>
+    <input type="checkbox"/><label>CSS</label>
+    <input type="checkbox"/><label>JavaScript</label>
+    <input type="checkbox"/><label>PHP</label>
+    <input type="checkbox"/><label>MySQL</label>
+    <input type="checkbox"/><label>Laravel</label>
+    <input type="checkbox"/><label>React Native</label>
+  </fieldset>
+  <br>
+  <input type="reset" value="Reset"/>
+  <input type="submit" value="Simpan"/>
+  <input type="button" value="Button" onclick=""/>
+</body>
+</head>
+</html>
