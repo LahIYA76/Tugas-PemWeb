@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+    <style>
+        /* Anchor Link Styling */
+        a {
+            font-size: 50px;
+            text-decoration: none;
+            color: navy;
+            display: block;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Anchor Link Hover Effect */
+        a:hover {
+            color: cadetblue;
+            text-decoration: underline;
+        }
+
+        /* Input Field Styling */
+        input {
+            width: 300px;
+            height: 30px;
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+            margin: 20px auto;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Input Field Focus Effect */
+        input:focus {
+            border-color: orange;
+            outline: none;
+            box-shadow: 0 0 5px orange;
+        }
+
+        /* Disabled Input Field Styling */
+        input:disabled {
+            background-color: lightgray;
+            color: #666;
+            border-color: gray;
+        }
+
+        /* Table Styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        /* Table Header and Data Cell Styling */
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Table Row Styling */
+        tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        /* Bold Style for First and Last Table Rows */
+        tr:first-child,
+        tr:last-child {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: red;
+        }
+
+        /* Text Alignment for First Table Row */
+        tr:first-child {
+            text-align: center;
+        }
+
+        /* Text Alignment for Last Table Row */
+        tr:last-child {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://bif-sby.telkomuniversity.ac.id//">Informatika Telkom University Surabaya</a>
+
+    <p><input type="text"></p>
+    <p><input type="text" disabled value="Disabled"></p>
+
+    <table>
+        <tr>
+            <th>Row</th>
+            <th>Row</th>
+            <th>Row</th>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td>Row</td>
+            <td>Row</td>
+        </tr>
+    </table>
+</body>
+</html>
